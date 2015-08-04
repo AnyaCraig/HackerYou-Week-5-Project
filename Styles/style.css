@@ -1,0 +1,555 @@
+/* NORMALIZE */
+
+ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+/* CLEARFIX */
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+/* BORDER-BOX */
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+/* -------------- END OF SETUP STYLES -------------- */
+
+/* FONT STYLES */
+
+@font-face {
+    font-family: Traveling;
+    src: url(Fonts/traveling_typewriter/TravelingTypewriter.ttf);
+}
+
+/* ---------- MAIN STYLES ---------- */
+
+/* GENERAL STYLES AND HELPER STYLES */
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+	position: relative;
+	background: url("../Images/meadow-buttercups.jpg") no-repeat center center fixed; 
+	background-color: rgba(251, 238, 182, 0.22);
+	background-blend-mode: lighten;
+  	background-size: cover;
+  	font-size: 10px;
+  	font-family: "Traveling", serif;
+  	color: #0B0121;
+}
+
+a {
+	display: block;
+	font-size: 1.9em;
+	text-decoration: none;
+	color: #4F001E;
+}
+
+.page-wrapper {
+	max-width: 950px;
+	min-height: 100%;
+  	margin-bottom: -60px; 
+	margin: 0 auto;
+	padding: 2% 4%;
+	background: url("../Images/packaging-paper-texture.jpg") no-repeat center center fixed;
+	background-color: rgba(255,247, 189, 0.4);
+	background-blend-mode: lighten;
+	box-shadow: 0 0 5px #0B0121;
+}
+
+.page-wrapper p {
+	font-size: 2em;
+}
+
+header {
+	text-align: center;
+}
+
+button,
+input[type = "submit"] {
+	background: #0A0957;
+	border: none;
+	width: 270px;
+	height: 50px;
+	color: white;
+	font-size: 1.8em;
+	text-shadow: 2px 2px 0 black;
+	margin: 30px auto;
+	border-radius: 10px;
+	box-shadow: 2px 2px 0 black;
+	transition: .5s all ease-in-out;
+}
+
+button:hover,
+input[type="submit"]:hover {
+	background: #05399C;
+}
+
+.center {
+	width: 100%;
+	text-align: center;
+	clear: both;
+}
+
+h1 {
+	font-family: "Cabin Sketch", cursive;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size:14em;
+	margin: 0 auto;
+	color: white;
+	text-shadow: 3px 3px 0 black, 6px 6px 0 #FF2800;
+	/*color: rgba(1,1,33,0.8);*/
+}
+
+h2 {
+	font-family: "Traveling";
+	font-size: 2.8em;
+	text-shadow: 1px 1px 0 #FF2800;
+	margin-bottom: 40px;
+}
+
+h3 {
+	font-family: "Cabin Sketch", sans-serif;
+	font-size: 3.5em;
+	text-shadow: 2px 2px 0 white;
+	margin-bottom: 20px;
+}
+
+h4 {
+	text-align: center;
+	font-family: "Cabin Sketch", sans-serif;
+	font-size: 3.5em;
+	text-shadow: 1px 1px 0 #FF2800;
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+
+h5 {
+	font-family: "Dancing Script", cursive;
+	text-align: center;
+	font-size: 2.5em;
+	color: #0A0957;
+	margin-bottom: 20px;
+}
+
+.block {
+	display: block;
+}
+
+/* ---------- SECTION STYLES ---------- */
+
+
+/* WEATHER FORM */
+
+.form-1 {
+	width: 100%;	
+}
+
+.location,
+.date {
+	margin-top: 20px;
+}
+
+label {
+	font-size: 2em;
+	margin: 20px 0;
+}
+
+select {
+	background: #c2d8ef;
+	width: 200px;
+	font-size: 2em;
+	margin-left: 30px;
+	cursor: pointer;
+}
+
+.location,
+.date {
+	width: 100%;
+}
+
+/* WEATHER REVEAL */
+
+.weather-reveal {
+	width: 100%;
+	min-height: 260px;
+
+}
+
+.weather-reveal-left {
+	width: 15%;
+	float: left;
+}
+
+.weather-icon {
+	width: 80%;
+	margin: auto;
+}
+
+.weather-reveal-right {
+	width:85%;
+	float: left;
+}
+
+p.advisory {
+	margin-bottom: 20px;
+}
+
+p.advice {
+	color: #0A0957;
+}
+
+/* FOOD FORM */
+
+.food-section {
+	width: 100%;
+}
+
+.food-section p {
+	margin-bottom: 20px;
+}
+
+.food-form {
+	margin-top: 20px;
+}
+
+.checkbox-left-col,
+.checkbox-right-col {
+	width: 50%;
+	float: left;
+}
+
+.food-form label {
+	cursor: pointer;
+}
+
+/* FOOD REVEAL */
+
+.food-reveal {
+	width: 100%;
+}
+
+.recipe-card {
+	width: 31%;
+	min-height: 480px;
+	margin: 0 1%;
+	background: url("../Images/index-card-cropped.jpg") no-repeat; 
+	background-size: cover;
+  	float: left;
+  	text-align: center;
+  	box-shadow: 6px 6px 3px rgba(94, 84, 60, 0.4);
+  	position: relative;
+}
+
+.recipe-card .center {
+	position: absolute;
+	bottom: 0;
+	margin-top: 40px;
+	
+}
+
+.recipe-card p {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.recipe-card a {
+	font-family: "Dancing Script", cursive;
+	font-size: 2.8em;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 20px;
+
+}
+
+.recipe-card button {
+	background: #FF2800;
+	width: 80%;
+	height: auto;
+	padding: 10px;
+}
+
+.recipe-card button:hover {
+	background: #E87600;
+}
+
+p.recipe-name {
+	color: #1E085F;
+	font-size: 2em;
+}
+
+.recipe-image {
+	width: 100%;
+	border: 11px solid #FFF5DC;
+	box-shadow: 6px 6px 3px rgba(94, 84, 60, 0.4);
+	
+}
+
+.ghost {
+	width: 80%;
+	margin: 8% auto;
+	transform: rotate(-3deg);
+	background: transparent;
+	position: relative;
+}
+
+.tape {
+	width: 50%;
+	position: absolute;
+	top:5px;
+	left:-30px;
+	transform: rotate(-35deg);
+}
+
+button.start-again {
+	margin-left: 20px;
+	margin-bottom: 80px;
+}
+
+/* PICNIC BASKET */
+
+.picnic-basket {
+	width: 100%;
+	min-height: 300px;
+	background: url("../Images/crumpled-paper-texture.jpg") no-repeat; 
+	background-size: cover;
+	padding: 5px 30px;
+	margin-bottom: 40px;
+}
+
+.picnic-basket h4 {
+	margin-bottom: 5px;
+}
+
+.basket-image {
+	width: 25%;
+	float: left;
+}
+
+.basket-image img {
+	width:100%;
+}
+
+.saved-recipes {
+	width: 75%;
+	float: left;
+	padding-left: 30px;
+}
+
+/* FOOTER */
+
+footer {
+  height: 60px; 
+}
+
+footer {
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	background: rgba(22,11,33,0.9);
+}
+
+img.wunderground-logo {
+	float: left;
+	width: 150px;
+	margin-top: 10px;
+	margin-left: 50px;
+}
+
+img.yummly-logo {
+	float: right;
+	height: 40px;
+	margin-top: 10px;
+	margin-right: 50px;
+	display: inline-block;
+}
+
+footer p {
+	color: white;
+	font-size: 2em;
+	line-height: 60px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width:980px) {
+	h1 {
+		font-size: 10em;
+	}
+
+	.recipe-card {
+		width: 50%;
+		min-height: 600px;
+		margin: 50px 25%;
+	}
+
+	.recipe-card p {
+		font-size: 2.6em;
+	}
+
+	.recipe-card a {
+		font-size: 3.4em;
+	}
+
+	.picnic-basket {
+		text-align: center;
+	}
+
+	.saved-recipes {
+		width: 100%;
+		padding: 30px;
+	}
+
+	.picnic-basket img {
+		display: none;
+	}
+
+	.picnic-basket button {
+		margin-top: 50px;
+	}
+}
+
+@media (max-width:700px) {
+	.recipe-card {
+		width: 70%;
+		min-height: 650px;
+		margin: 50px 15%;
+	}
+}
+
+@media (max-width:640px) {
+	.recipe-card {
+		min-height: 600px;
+	}
+
+	.recipe-card p{
+		font-size: 2.2em;
+	}
+
+	button.more-recipes,
+	button.start-again {
+		width: 80%;
+		margin: 10px 0;
+	}
+
+	button.start-again {
+		margin-bottom: 50px;
+	}
+
+	.picnic-basket {
+		margin-top: 20px;
+	}
+}
+
+@media (max-width:600px) {
+	.recipe-card {
+		min-height: 570px;
+	}
+
+	.recipe-card p {
+		font-size: 2em;
+	}
+
+	.recipe-card a {
+		font-size: 3em;
+	}
+
+	select {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+
+	footer {
+		min-height: 220px;
+		overflow: auto;
+	}
+
+	footer p,
+	footer img.wunderground-logo,
+	footer img.yummly-logo {
+		display: block;
+		clear: both;
+		float: none;
+		margin: 20px auto;
+
+	}
+}
+
+@media (max-width:550px) {
+	h1 {
+		font-size: 7em;
+	}
+
+	h2 {
+		font-size: 2.4em;
+	}
+
+	.checkbox-left-col,
+	.checkbox-right-col {
+		width: 100%;
+	}
+
+	.weather-reveal-left,
+	.weather-reveal-right {
+		width: 100%;
+		text-align: center;
+	}
+
+	.weather-icon {
+		width: 40%;
+	}
+
+	.recipe-card {
+		min-height: 550px;
+	}
+}
+
+@media (max-width: 500px) {
+	.recipe-card {
+		min-height: 520px;
+	}
+}
+
+@media (max-width: 450px) {
+	.recipe-card {
+		min-height: 490px;
+	}
+}
+
+@media (max-width:390px) {
+	h1{
+		font-size: 5em;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	.recipe-card {
+		min-height: 460px
+	}
+
+	.empty-basket {
+		width: 80%;
+		margin: 20px 0;
+	}
+
+	button,
+	input[type=submit] {
+		width: 80%;
+	}
+}

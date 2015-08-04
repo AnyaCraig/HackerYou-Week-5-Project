@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<!---=[ donkey ]=-  8/98
+                                         _
+     ,,;;;,,,,   _.---.._                \`-._
+   `';;;;;;;;;;;;;,      `'.           .--'-._';,
+      ,;;';;''/            `;_       `';;;;'    `'.
+              |  .            '-._   ,;;:'   /  '<a'.
+              |  ;        \       '.,;;'     |       \
+               \  \       |                  ;._. ,-'`.
+            /`'-`;.`'._   /                  /   `-.\_/
+            ; .-._ .-'  .'                  |
+           / /    '\ .-'`.                _/
+       _.-' /       \ \   '-._            /
+      (_/_.'     __.) /       `;--.._/   (
+                (_/__/          \   `,   \
+                                 \  | \   \
+                                  \ \  `\  |
+                                   \ \   \ \
+                                    \_\   \ \
+                                     )-`\  \_\
+                                jgs  `==`   )-`\
+                                            `==`
+-->
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Picnickity</title>
+	<link rel="icon" type="image/png" href="Images/picnickityfavicon.png">
+	<link rel="stylesheet" href="Styles/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Cabin+Sketch|Dancing+Script' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="page-wrapper">
+
+	<!-- HEADER SECTION -->
+
+		<header>
+			<h1>Picnickity</h1>
+			<h2>Plan the perfect picnic!</h2>
+		</header>
+
+	<!-- MAIN SECTION -->
+
+		
+		<section class="form-1">
+			<form action="" class="weather-form">
+				
+				<h3>#1: Weather</h3>
+				<p>Nothing ruins a picnic faster than foul weather - let's make sure it will be lovely!</p>
+
+				<div class="location">
+
+					<label for=select-city>Where will your picnic be?</label>
+					<select name="city" id="select-city">
+						<option value="Vancouver">Vancouver, BC</option>
+						<option value="Victoria">Victoria, BC</option>
+						<option value="Edmonton">Edmonton, AB</option>
+						<option value="Calgary">Calgary, AB</option>
+						<option value="Saskatoon">Saskatoon, SK</option>
+						<option value="Winnipeg">Winnipeg, MB</option>
+						<option value="Toronto">Toronto, ON</option>
+						<option value="Ottawa">Ottawa, ON</option>
+						<option value="Montreal">Montreal, QC</option>
+						<option value="Saint_John">Saint John, NB</option>
+						<option value="Moncton">Moncton, NB</option>
+						<option value="Halifax">Halifax, NS</option>
+						<option value="Whitehorse">Whitehorse, YT</option>
+						<option value="Yellowknife">Yellowknife, NT</option>
+					</select>
+			
+				</div> <!-- /.location -->
+
+				<div class="date">
+
+					
+					<label for="#picnic-date">When will your picnic be?</label>
+					<select class="select-date">
+						<option id="today" value="0"></option>
+						<option id="tomorrow" value="1"></option>
+						<option id="day-three" value="2"></option>
+						<option id="day-four"value="3"></option>
+						<option id="day-five" value="4"></option>
+						<option id="day-six" value="5"></option>
+						<option id="day-seven" value="6"></option>
+						<option id="day-eight" value="7"></option>
+						<option id="day-nine" value="8"></option>
+						<option id="day-ten" value="9"></option>
+					</select>
+				</div><!-- /.date -->
+
+				<div class="center">
+					<button class="submit-location">How will the weather be?</button><!-- submit button 
+				-->
+				</div><!-- /.center -->
+
+				
+			</form><!-- /.weather-form -->
+		</section> <!-- /.form-1 -->
+
+
+		<section class="weather-reveal">
+			<div class="weather-reveal-left">
+				<img class="weather-icon" src="" alt="">
+			</div> <!-- /.weather-reveal-left -->
+			<div class="weather-reveal-right">
+				<p class="advisory"></p>
+			
+				<p class="advice"></p>
+			</div> <!-- weather-reveal-right -->
+
+			<div class="center">	
+				<button class="select-another-day">Select another day</button>
+			</div> <!-- /.center -->
+
+		</section><!-- /.weather-reveal -->
+
+
+		<section class="food-section">
+		
+			<h3>#2: Food</h3>
+			<p>Food can make or break a picnic - let's find delicious dishes that can be enjoyed by your whole party.</p>
+			<p>What dietary restrictions must be accommodated?</p>
+
+			<form class="food-form" action="">
+				<div class="checkbox-left-col">
+					<label for="vegetarian">
+					<input type="checkbox" id="vegetarian" name="vegetarian" value="387^Lacto-ovo vegetarian">
+					vegetarian</label>
+					<span class="block"></span>
+
+					<label for="vegan">
+					<input type="checkbox" id="vegan" name="vegan" value="386^Vegan">
+					vegan</label>
+					<span class="block"></span>
+
+					<label for="gluten-free">
+					<input type="checkbox" id="gluten-free" name="gluten-free" value="393^Gluten-Free">
+					gluten-free</label>
+					<span class="block"></span>
+
+					<label for="dairy-free">
+					<input type="checkbox" id="dairy-free" name="dairy-free" value="396^Dairy-Free">
+					dairy-free</label>
+					<span class="block"></span>
+				
+				</div> <!-- /.checkbox-left-col -->
+
+				<div class="checkbox-right-col">
+
+					<label for="egg-free">
+					<input type="checkbox" id="egg-free" name="dairy-free" value="397^Egg-Free">
+					egg-free</label>
+					<span class="block"></span>
+
+					<label for="peanut-free">
+					<input type="checkbox" id="peanut-free" name="dairy-free" value="394^Peanut-Free">
+					peanut-free</label>
+					<span class="block"></span>
+
+					<label for="treenut-free">
+					<input type="checkbox" id="tree-nut-free" name="dairy-free" value="395^Tree Nut-Free">
+					tree nut-free</label>
+					<span class="block"></span>
+
+					<label for="seafood-free">
+					<input type="checkbox" id="seafood-free" name="dairy-free" value="398^Seafood-Free">
+					seafood-free</label>
+					<span class="block"></span>
+
+				</div> <!-- /.checkbox-right-col -->
+
+				<div class="center">
+					<input type="submit" value="Suggest recipes!">
+				</div> <!-- /.center -->
+			</form> <!-- /.food-form -->
+			
+		</section> <!-- /.food-section -->
+
+		<section class="food-reveal">
+			<h4>Here are some picnic-worthy recipes to try!</h4>
+			<div class="recipe-batch">
+				<div class="recipe1 recipe-card" data-id=""  >
+					<div class="ghost">
+						<img class="tape" src="Images/tape.png" alt="a small piece of brown tape">
+						<img class="recipe-image recipe-image-1" src="" frameborder="0">
+					</div> <!-- /.ghost -->
+					<p class="recipe-name recipe-name-1"></p>
+					<div class="center">
+						<a class="recipe-link-1" target="_blank" href="">View recipe</a>
+						<button class="save">Save recipe to picnic basket</button>
+					</div> <!-- /.center -->
+				</div><!-- /.recipe1 -->
+				<div class="recipe2 recipe-card" data-id="" >
+					<div class="ghost"> 
+						<img class="tape" src="Images/tape.png" alt="a small piece of brown tape">
+						<img class="recipe-image recipe-image-2" src="" frameborder="0">
+					</div> <!-- /.ghost -->
+					<p class="recipe-name recipe-name-2"></p>
+					<div class="center">
+						<a class="recipe-link-2"  target="_blank"href="">View recipe</a>
+						<button class="save">Save recipe to picnic basket</button>
+					</div> <!-- /.center -->
+				</div><!-- /.recipe2 -->
+				<div class="recipe3 recipe-card" data-id="">
+					<div class="ghost">
+						<img class="tape" src="Images/tape.png" alt="a small piece of brown tape">
+						<img class="recipe-image recipe-image-3" src="" frameborder="0">
+					 </div> <!-- /.ghost -->
+					<p class="recipe-name recipe-name-3"></p>
+					<div class="center">
+						<a class="recipe-link-3"  target="_blank"href="">View recipe</a>
+						<button class="save">Save recipe to picnic basket</button>
+					</div><!-- /.center -->
+				</div><!-- /.recipe3 -->
+			</div><!-- /.recipe-batch -->
+
+			<div class="center">
+				<button class="more-recipes">Suggest more recipes</button>
+				<button class="start-again">Start from scratch</button>
+			</div><!-- /.center -->
+		</section><!-- /.food-reveal -->
+
+		<section class="picnic-basket">
+			<h4>Picnic Basket</h4>
+			<h5>Stash your favourite recipes here!</h5>
+
+			<div class="basket-image">
+				<img src="Images/picnicbasket.png" alt="a line drawing of a picnic basket brimming with food">
+			</div><!-- /.basket-image -->
+
+			<div class="saved-recipes">
+				<!-- The user can put recipes in here -->
+			</div> <!-- /.saved-recipes -->
+
+			<div class="center">
+				<button class="empty-basket">EMPTY BASKET</button>
+			</div><!-- /.center -->
+				
+		</section> <!-- /.picnic-basket -->
+		
+	</div> <!-- /.page-wrapper -->
+
+	<footer>
+		<img class="wunderground-logo" src="Images/wundergroundLogo_4c_rev_horz.png" alt="the Wunderground logo">
+		<img class="yummly-logo" src="Images/Yummly_logo.png" alt="Yummly logo">
+		<p>&copy 2015 Anya Craig</p>
+		<!-- <p>Recipe search powered by <a href='http://www.yummly.com/recipes'><img alt='Yummly' src='Images/Yummly_logo.png'/></a></p> -->
+	</footer>
+	
+	<!-- SCRIPTS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="JavaScript/moment.js"></script>
+	<script src="JavaScript/script.js"></script>
+</body>
+</html>
